@@ -1,6 +1,7 @@
-import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import { Loader } from "lucide-react";
+
+import { cn } from "@/lib/utils";
 
 const spinnerVariants = cva("text-muted-foreground animate-spin", {
   variants: {

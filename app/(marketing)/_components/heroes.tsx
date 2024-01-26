@@ -1,5 +1,6 @@
-import { DOCUMENTS, READING } from "@/lib/constants";
 import Image from "next/image";
+
+import { DOCUMENTS, READING } from "@/lib/constants";
 
 export default function Heroes() {
   return (

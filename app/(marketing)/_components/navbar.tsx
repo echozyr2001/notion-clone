@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useConvexAuth } from "convex/react";
 import { SignInButton, UserButton } from "@clerk/clerk-react";
 
@@ -10,7 +11,6 @@ import Spinner from "@/components/spinner";
 import { Button } from "@/components/ui/button";
 
 import Logo from "./logo";
-import Link from "next/link";
 
 export default function Navbar() {
   const { isAuthenticated, isLoading } = useConvexAuth();

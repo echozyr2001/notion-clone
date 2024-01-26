@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useConvexAuth } from "convex/react";
+import { SignInButton } from "@clerk/clerk-react";
 
 import Spinner from "@/components/spinner";
 import { Button } from "@/components/ui/button";
-import { SignInButton } from "@clerk/clerk-react";
 
 export default function Heading() {
   const { isAuthenticated, isLoading } = useConvexAuth();
