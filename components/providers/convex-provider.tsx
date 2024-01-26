@@ -8,7 +8,7 @@ const convex = new ConvexReactClient(
   process.env.NEXT_PUBLIC_CONVEX_URL as string
 );
 
-export function ConvexReactProvider({
+export default function ConvexReactProvider({
   children,
 }: {
   children: React.ReactNode;

@@ -5,7 +5,7 @@ import { SignInButton, UserButton } from "@clerk/clerk-react";
 
 import { cn } from "@/lib/utils";
 import { useScrollTop } from "@/hooks/use-scroll-top";
-import { ModeToggle } from "@/components/mode-toggle";
+import ModeToggle from "@/components/mode-toggle";
 import Spinner from "@/components/spinner";
 import { Button } from "@/components/ui/button";
 
