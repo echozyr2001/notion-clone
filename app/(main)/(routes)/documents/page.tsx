@@ -1,3 +1,37 @@
+"use client";
+
+import Image from "next/image";
+import { useUser } from "@clerk/clerk-react";
+import { PlusCircle } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+
+import { EMPTY } from "@/lib/constants";
+
 export default function DocumentsPage() {
-  return <div>documents test</div>;
+  const { user } = useUser();
+
+  return (
+    <div className="h-full flex flex-col items-center justify-center space-y-4">
+      <Image
+        src={EMPTY.empty}
+        height="300"
+        width="300"
+        alt="Empty"
+        className="dark:hidden"
+      />
+      <Image
+        src={EMPTY.emptyDark}
+        height="300"
+        width="300"
+        alt="Empty Dark"
+        className="hidden dark:block"
+      />
+      <h2>Welcome to {user?.firstName}&apos;s Jotion</h2>
+      <Button>
+        <PlusCircle className="h-4 w-4 mr-2" />
+        Create a note
+      </Button>
+    </div>
+  );
 }
